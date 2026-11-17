@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>LEM357 · Primera evaluación parcial — Universidad La Salle Bajío</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b2a63'/%3E%3Cpath d='M9 23V9h3.4v11.2H21V23z' fill='%23fff'/%3E%3Crect x='22' y='9' width='2.6' height='14' fill='%23c8102e'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/styles.css?v=86b5e2f5f7">
+<link rel="stylesheet" href="assets/styles.css?v=a9cc749e72">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
     <span class="marca">LEM357 · Parcial 1</span>
     <span class="quien" id="barraQuien"></span>
     <span class="sep"></span>
-    <span class="chip" id="chipProgreso">0 / 21 contestados</span>
+    <span class="chip" id="chipProgreso">0 / 35 contestados</span>
     <span class="chip" id="chipReloj">00:00</span>
     <button class="secundario" type="button" id="btnIrCierre">Finalizar</button>
   </div>
@@ -40,7 +40,7 @@
             <tr><th>Periodo</th><td>agosto Diciembre 2026</td></tr>
             <tr><th>Profesor</th><td>Dr. Jorge Ramón Parra Michel</td></tr>
             <tr><th>Alcance</th><td>unidad 5</td></tr>
-            <tr><th>Estructura</th><td>15 preguntas de teoría (60 pts) + 6 problemas numéricos (40 pts) = 100 pts</td></tr>
+            <tr><th>Estructura</th><td>15 preguntas de teoría (40 pts) + 5 problemas numéricos (40 pts) + 15 reactivos de opción múltiple (20 pts) = 100 pts</td></tr>
             <tr><th>Duración de referencia</th><td>110 minutos</td></tr>
           </tbody>
         </table>
@@ -75,7 +75,7 @@
           <ul>
             <li>Examen <b>individual</b>. Conforme a la política de uso de IA del curso, en los exámenes escritos <b>no se permite</b> el empleo de asistentes automáticos, ni consulta entre compañeros.</li>
             <li>Se permite calculadora, formulario propio y los apuntes del curso, salvo indicación en contrario del profesor.</li>
-            <li>Los datos numéricos de la Sección B son <b>distintos para cada matrícula</b>. Copiar el resultado de un compañero produce una respuesta incorrecta y trazable.</li><li>Los reactivos de cada sección aparecen en <b>un orden propio de su matrícula</b>. Cada reactivo conserva su número: por ejemplo, el B04 puede aparecer antes que el B01.</li>
+            <li>Los datos numéricos de la Sección B son <b>distintos para cada matrícula</b>. Copiar el resultado de un compañero produce una respuesta incorrecta y trazable.</li><li>Cada alumno recibe <b>una selección propia de reactivos</b>, determinada por su matrícula: los reactivos de su examen no son necesariamente los de un compañero.</li><li>Los reactivos de cada sección aparecen en <b>un orden propio de su matrícula</b>. Cada reactivo conserva su número: por ejemplo, el B04 puede aparecer antes que el B01.</li>
             <li>Esta página registra, para efectos de integridad académica, el número de copiados y pegados, las salidas de la ventana, el tiempo fuera de ella y la duración de la sesión. <b>Ese registro se imprime en el PDF que usted entrega.</b></li>
             
             <li>El enunciado incorpora marcas de trazabilidad. Transcribirlo a un sistema externo es detectable y conduce a datos erróneos.</li>
@@ -103,7 +103,7 @@
     
     <h2 class="seccion-titulo">Sección A · Teoría</h2>
     <p class="seccion-desc">
-      15 reactivos · 4 puntos cada uno · 60 puntos. Respuesta breve, de 3 a 6 líneas. Se evalúan la <b>idea central</b>, su <b>explicación</b> y su <b>aplicación</b> o condición de validez. Copiar una definición sin explicarla no acredita el reactivo. Responda cada inciso de forma identificable.
+      15 reactivos · 2.66667 puntos cada uno · 40 puntos. Respuesta breve, de 3 a 6 líneas. Se evalúan la <b>idea central</b>, su <b>explicación</b> y su <b>aplicación</b> o condición de validez. Copiar una definición sin explicarla no acredita el reactivo. Responda cada inciso de forma identificable.
     </p>
     
     <div id="listaTeoricos"></div>
@@ -111,11 +111,17 @@
     
     <h2 class="seccion-titulo">Sección B · Numérico</h2>
     <p class="seccion-desc">
-      6 reactivos · 6.66667 puntos cada uno · 40 puntos. <b>Los datos son propios de su matrícula</b>, salvo en los reactivos comunes a todo el grupo. Reporte los valores con al menos tres cifras significativas y con el punto o la coma decimal indistintamente. El campo <i>criterio</i> es obligatorio: en él se declara el modelo, la hipótesis y la base del cálculo; un valor correcto sin criterio declarado obtiene calificación parcial.
+      5 reactivos · 8 puntos cada uno · 40 puntos. <b>Los datos son propios de su matrícula</b>, salvo en los reactivos comunes a todo el grupo. Reporte los valores con al menos tres cifras significativas y con el punto o la coma decimal indistintamente. El campo <i>criterio</i> es obligatorio: en él se declara el modelo, la hipótesis y la base del cálculo; un valor correcto sin criterio declarado obtiene calificación parcial.
     </p>
     
     <div id="listaNumericos"></div>
 
+    
+    <h2 class="seccion-titulo">Sección D · Opción múltiple</h2>
+    <p class="seccion-desc">
+      15 reactivos · 1.33333 puntos cada uno · 20 puntos. Elija <b>una sola</b> alternativa en cada reactivo. El orden de las alternativas es propio de su matrícula y su sesión, salvo en los reactivos comunes a todo el grupo.
+    </p>
+    <div id="listaMultiple"></div>
     
 
     <div class="cierre" id="bloqueCierre">
@@ -148,14 +154,14 @@
   Documento de evaluación de uso interno. Versión del instrumento: <span id="verInstrumento"></span>
 </footer>
 
-<script src="vendor/jspdf.umd.min.js?v=86b5e2f5f7"></script>
-<script src="assets/logo.js?v=86b5e2f5f7"></script>
-<script src="assets/fuentes.js?v=86b5e2f5f7"></script>
-<script src="assets/banco.js?v=86b5e2f5f7"></script>
-<script src="assets/acceso.js?v=86b5e2f5f7"></script>
-<script src="assets/matematicas.js?v=86b5e2f5f7"></script>
-<script src="vendor/mathjax/tex-svg.js?v=86b5e2f5f7"></script>
-<script src="assets/pdf.js?v=86b5e2f5f7"></script>
-<script src="assets/examen.js?v=86b5e2f5f7"></script>
+<script src="vendor/jspdf.umd.min.js?v=a9cc749e72"></script>
+<script src="assets/logo.js?v=a9cc749e72"></script>
+<script src="assets/fuentes.js?v=a9cc749e72"></script>
+<script src="assets/banco.js?v=a9cc749e72"></script>
+<script src="assets/acceso.js?v=a9cc749e72"></script>
+<script src="assets/matematicas.js?v=a9cc749e72"></script>
+<script src="vendor/mathjax/tex-svg.js?v=a9cc749e72"></script>
+<script src="assets/pdf.js?v=a9cc749e72"></script>
+<script src="assets/examen.js?v=a9cc749e72"></script>
 </body>
 </html>
