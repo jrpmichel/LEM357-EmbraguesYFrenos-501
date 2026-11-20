@@ -1,5 +1,5 @@
 /* LEM357 — Dieseño elementos de maquina
-   Primera evaluación parcial
+   embrages y Fenos
    ARCHIVO GENERADO POR SINODAL. No editar a mano: la fuente es banco.json. */
 window.EXAMEN_BANCO = {
  "meta": {
@@ -12,7 +12,7 @@ window.EXAMEN_BANCO = {
   "grupo": "501",
   "periodo": "agosto Diciembre 2026",
   "profesor": "Dr. Jorge Ramón Parra Michel",
-  "evaluacion": "Primera evaluación parcial",
+  "evaluacion": "embrages y Fenos",
   "evaluacionCorta": "embrages y Fenos",
   "alcance": "unidad 5",
   "duracionMin": 110,
