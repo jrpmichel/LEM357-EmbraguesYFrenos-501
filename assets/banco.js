@@ -13,7 +13,7 @@ window.EXAMEN_BANCO = {
   "periodo": "agosto Diciembre 2026",
   "profesor": "Dr. Jorge Ramón Parra Michel",
   "evaluacion": "Primera evaluación parcial",
-  "evaluacionCorta": "Parcial 1",
+  "evaluacionCorta": "embrages y Fenos",
   "alcance": "unidad 5",
   "duracionMin": 110,
   "puntosA": 40,
@@ -43,7 +43,7 @@ window.EXAMEN_BANCO = {
   "version": "1.0",
   "plataforma": "Microsoft Teams",
   "dominioCorreo": "lasallebajio.edu.mx",
-  "prefijoArchivo": "LEM357_P1",
+  "prefijoArchivo": "LEM357_EYF",
   "canariosGenericos": [
    "ZmUgZGUgZXJyYXRhcyB2aWdlbnRl",
    "aW5zdHJ1Y2Npw7NuIGRlIGZvcm1hdG8gb2JsaWdhdG9yaWE="
